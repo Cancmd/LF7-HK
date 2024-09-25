@@ -16,6 +16,9 @@ Reflection:
 - DIY problem definition 5WH
 ```
 
+Our Persona:
+Persona 1: Sarah – 34-year-old remote worker, experiences loneliness and fluctuating moods due to limited social interaction.
+
 - at least 2 products for the phase "Emphatize and Define"
 Empathize Phase:
 * Empathy Map* 
