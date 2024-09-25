@@ -1,5 +1,5 @@
-# LF7-HK - Project Smart Home - Case 2
- mental health and loneliness at home
+# LF7-HK - Project Smart Home - Case 2: mental health and loneliness at home
+
 
 
 Portfolio on GitLab/GitHub (50%):
@@ -29,6 +29,7 @@ Empathize and Define Phase:
 ![Problem Tree Template (1)](https://github.com/user-attachments/assets/bb759211-f310-4dc8-a4fd-b5ffef4f7816)
 
 - at least 1 product for the phase "Ideate"
+
 Ideate Phase:
 
 
@@ -38,8 +39,6 @@ Ideate Phase:
 ```
 - a go viral post for the following blog: https://www.designentrepreneurshipworkshop.org/
 - ??? creating a fake post?
-```
-
 
 Future:
 - 2 feedback sheets from the feedback round from your peer groups
