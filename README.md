@@ -17,23 +17,22 @@ Reflection:
 - DIY problem definition 5WH
 ![image](https://github.com/user-attachments/assets/da6f8547-ac17-4d6c-b29d-ebdf74e06de2)
 
-Our Persona for the emphatize and define method:
-Persona: Sarah – 34-year-old remote worker, experiences loneliness and fluctuating moods due to limited social interaction.
-
 - at least 2 products for the phase "Emphatize and Define"
-Empathize and Define Phase:
-* Empathy Map* 
-![Empathy map canvas_2024-09-25_08-32-33](https://github.com/user-attachments/assets/5ccb8d77-3fe5-42d7-9c14-35ab38961fd5)
 
-* Problem Tree *
+# Empathize Phase:
+* Empathy Map
+![Empathy map canvas_2024-09-25_08-32-33](https://github.com/user-attachments/assets/5ccb8d77-3fe5-42d7-9c14-35ab38961fd5)
+Our Persona: Persona: Sarah – 34-year-old remote worker, experiences loneliness and fluctuating moods due to limited social interaction.
+
+# Define Phase:
+* Problem Tree
 ![Problem Tree Template (1)](https://github.com/user-attachments/assets/bb759211-f310-4dc8-a4fd-b5ffef4f7816)
 
+# Ideate Phase:
 - at least 1 product for the phase "Ideate"
+- Brainstorm and Come Up with Creative Solutions
 
-Ideate Phase:
-
-
-- a business canvas model
+### a business canvas model
 - https://trello.com/b/eanYfkwi/lernfeld-7-hackathon
 
 ```
