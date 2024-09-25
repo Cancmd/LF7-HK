@@ -12,9 +12,9 @@ Reflection:
 - What are our challenges by far?
 - How did we overcome these challenges?
 ```
-```
 - DIY problem definition 5WH
-```
+![image](https://github.com/user-attachments/assets/da6f8547-ac17-4d6c-b29d-ebdf74e06de2)
+
 
 Our Persona:
 Persona 1: Sarah – 34-year-old remote worker, experiences loneliness and fluctuating moods due to limited social interaction.
