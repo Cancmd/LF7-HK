@@ -14,10 +14,14 @@ Reflection:
 
 
 - DIY problem definition 5WH
-
 - at least 2 products for the phase "Emphatize and Define"
+
 * Empathy Map* 
 ![Empathy map canvas_2024-09-25_08-32-33](https://github.com/user-attachments/assets/5ccb8d77-3fe5-42d7-9c14-35ab38961fd5)
+
+* Problem Tree *
+![Problem Tree Template (1)](https://github.com/user-attachments/assets/bb759211-f310-4dc8-a4fd-b5ffef4f7816)
+
 
 - at least 1 product for the phase "Ideate"
 
