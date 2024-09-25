@@ -23,6 +23,8 @@ Reflection:
 * Empathy Map
 ![Empathy map canvas_2024-09-25_08-32-33](https://github.com/user-attachments/assets/5ccb8d77-3fe5-42d7-9c14-35ab38961fd5)
 Our Persona: Persona: Sarah – 34-year-old remote worker, experiences loneliness and fluctuating moods due to limited social interaction.
+AEIOU Method?
+
 
 # Define Phase:
 * Problem Tree
