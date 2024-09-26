@@ -32,10 +32,12 @@ AEIOU Method?
 
 # Ideate Phase:
 - at least 1 product for the phase "Ideate"
+![image](https://github.com/user-attachments/assets/1035aa13-01ad-4d2b-b0a3-474627ea7d77)
+
 - Brainstorm and Come Up with Creative Solutions
 
 ### a business canvas model
-- https://trello.com/b/eanYfkwi/lernfeld-7-hackathon
+- not yet
 
 ```
 - a go viral post for the following blog: https://www.designentrepreneurshipworkshop.org/
