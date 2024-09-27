@@ -51,8 +51,9 @@ https://miro.com/app/board/uXjVLZl550A=/?share_link_id=520738355154
 https://miro.com/app/board/uXjVLZlotAA=/?share_link_id=369034070043
 
 
-### a business canvas model
-- not yet
+# business canvas model
+### ![image](https://github.com/user-attachments/assets/ea865e84-64f9-49ab-bb90-56da10e7d4f8)
+
 
 ```
 - a go viral post for the following blog: https://www.designentrepreneurshipworkshop.org/
