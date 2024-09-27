@@ -43,8 +43,10 @@ Persona 2: James - 68 represents an older, less tech-savvy individual who experi
 
 # Ideate Phase:
 ### Walt Disney Method
-
-
+![Walt Disney Method for Persona 1](https://github.com/user-attachments/assets/c22cce6d-feaf-4141-89c2-3444256bced8)
+![Walt Disney Method for Persona 2](https://github.com/user-attachments/assets/8a580849-9ae6-47dc-88cb-c6d2d8c1f368)
+https://miro.com/app/board/uXjVLZl550A=/?share_link_id=520738355154
+https://miro.com/app/board/uXjVLZlotAA=/?share_link_id=369034070043
 
 
 ### a business canvas model
