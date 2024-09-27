@@ -21,8 +21,10 @@ Reflection:
 
 # Empathize Phase:
 ### Empathy Map for our two personas
-![Empathy Map](https://github.com/user-attachments/assets/a5abb764-b56f-4e3b-a06f-dab39df951a7)
-https://miro.com/app/board/uXjVLaIYzPg=/?share_link_id=737915019092
+![Empathy Map for Persona 1_2024-09-27_07-47-32](https://github.com/user-attachments/assets/21e7a8c7-c5eb-495a-b814-d0069aba66da)
+![Empathy Map for Persona 2_2024-09-27_07-47-59](https://github.com/user-attachments/assets/7a639b36-a84f-4600-ad8a-a0c986733028)
+https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727252053154/e5431b7a1ab53364c23d3eaf34e0258a65bcd4bc?sender=u842cd77d0907f9e08ed76567
+https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727422093738/3ff87da4cc408c04c5d1e935d3fbcd9ffe245dd4?sender=u842cd77d0907f9e08ed76567
 
 # Our Persona: 
 Persona 1: Sarah represents a tech-savvy, creative remote worker facing emotional challenges like loneliness and burnout. Her struggles with work-life balance and the lack of deep social connections are very different from those of Persona 2: James, who is older and less familiar with technology, but both share a need for deeper emotional fulfillment.
