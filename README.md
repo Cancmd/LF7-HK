@@ -6,12 +6,20 @@ Portfolio on GitLab/GitHub (50%):
 - an individual learning goal including reflection
 - 
 Learning Goal:
-- We want to learn how to work with a Raspberry Pi and an Camera Module and other Modules aswell (LED)....
+- We want to learn how to work with a Raspberry Pi and an Camera Module and other Modules aswell also working with an AI.
+- Setting up a Raspberry Pi, adding different modules like a Camera or LED.
+- Setting up a Database for the AI
+- Using a AI
 
 Reflection:
-- What went well? Team
+- What went well? Teamwork great as always. 
+  No one was sick or absent.
+
 - What are our challenges by far?
+  Setting the AI up and using the Raspberry Pi with an Camera Module.
+
 - How did we overcome these challenges?
+  Asking others for help, searching in the Internet, asking AIs.
 ```
 
 - DIY problem definition 5-W Questions
@@ -60,6 +68,6 @@ https://miro.com/app/board/uXjVLZlotAA=/?share_link_id=369034070043
 - ??? creating a fake post?
 
 Future:
-- Pitstop 1: 2 feedback sheets from the feedback round from your peer groups [waiting for the other groups to send their feedback on us]
+- Pitstop 1: 2 feedback sheets from the feedback round from your peer groups
 - Pitstop 2: an overview of the technical solution (with activity-diagram und use-case-diagram)
 ```
