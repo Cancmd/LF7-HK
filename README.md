@@ -14,10 +14,8 @@ Reflection:
 - How did we overcome these challenges?
 ```
 
-- DIY problem definition 5WH
-![image](https://github.com/user-attachments/assets/da6f8547-ac17-4d6c-b29d-ebdf74e06de2)
-
-- at least 2 products for the phase "Emphatize and Define"
+- DIY problem definition 5-W Questions
+![image](https://github.com/user-attachments/assets/08db26f4-6946-4d4a-a474-069447d2778c)
 
 # Empathize Phase:
 ### Empathy Map for our two personas
@@ -34,10 +32,13 @@ Persona 2: James - 68 represents an older, less tech-savvy individual who experi
 ### AEIOU Method
 ![image](https://github.com/user-attachments/assets/80c384ae-3cc5-4f20-b1a4-25396e4e535b)
 
-
 # Define Phase:
-* Problem Tree
+### Problem Tree
 ![Problem Tree Template (1)](https://github.com/user-attachments/assets/bb759211-f310-4dc8-a4fd-b5ffef4f7816)
+
+### Point of View (POV)
+![image](https://github.com/user-attachments/assets/426ce2cf-49bc-4fa1-8dee-64bd5610ebf0)
+
 
 # Ideate Phase:
 - at least 1 product for the phase "Ideate"
