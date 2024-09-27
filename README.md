@@ -34,17 +34,18 @@ Persona 2: James - 68 represents an older, less tech-savvy individual who experi
 
 # Define Phase:
 ### Problem Tree
-![Problem Tree Template (1)](https://github.com/user-attachments/assets/bb759211-f310-4dc8-a4fd-b5ffef4f7816)
+![Problem Tree Template (2)](https://github.com/user-attachments/assets/88929dac-4fb4-4446-9af6-21eb7959116c)
+
 
 ### Point of View (POV)
 ![image](https://github.com/user-attachments/assets/426ce2cf-49bc-4fa1-8dee-64bd5610ebf0)
 
 
 # Ideate Phase:
-- at least 1 product for the phase "Ideate"
-![image](https://github.com/user-attachments/assets/1035aa13-01ad-4d2b-b0a3-474627ea7d77)
+### Walt Disney Method
 
-- Brainstorm and Come Up with Creative Solutions
+
+
 
 ### a business canvas model
 - not yet
