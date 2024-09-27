@@ -22,6 +22,7 @@ Reflection:
 ![Empathy Map for Persona 1_2024-09-27_07-47-32](https://github.com/user-attachments/assets/21e7a8c7-c5eb-495a-b814-d0069aba66da)
 ![Empathy Map for Persona 2_2024-09-27_07-47-59](https://github.com/user-attachments/assets/7a639b36-a84f-4600-ad8a-a0c986733028)
 https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727252053154/e5431b7a1ab53364c23d3eaf34e0258a65bcd4bc?sender=u842cd77d0907f9e08ed76567
+
 https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727422093738/3ff87da4cc408c04c5d1e935d3fbcd9ffe245dd4?sender=u842cd77d0907f9e08ed76567
 
 # Our Persona: 
@@ -46,6 +47,7 @@ Persona 2: James - 68 represents an older, less tech-savvy individual who experi
 ![Walt Disney Method for Persona 1](https://github.com/user-attachments/assets/c22cce6d-feaf-4141-89c2-3444256bced8)
 ![Walt Disney Method for Persona 2](https://github.com/user-attachments/assets/8a580849-9ae6-47dc-88cb-c6d2d8c1f368)
 https://miro.com/app/board/uXjVLZl550A=/?share_link_id=520738355154
+
 https://miro.com/app/board/uXjVLZlotAA=/?share_link_id=369034070043
 
 
