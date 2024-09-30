@@ -5,7 +5,7 @@ from datetime import datetime
 def capture_image():
     # Generate a unique filename based on the current date and time
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    output_path = f"/home/pi/Desktop/photo_{current_time}.jpg"
+    output_path = f"/home/sula/Desktop/Photo/photo_{current_time}.jpg"
     
     # Command to capture the image with libcamera-still
     command = [
