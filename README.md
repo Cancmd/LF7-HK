@@ -34,8 +34,10 @@ https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727252053154/e5431b7
 https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727422093738/3ff87da4cc408c04c5d1e935d3fbcd9ffe245dd4?sender=u842cd77d0907f9e08ed76567
 
 # Our Persona: 
+![image](https://github.com/user-attachments/assets/d260117e-454d-47e7-aff9-3aab73314498)
 Persona 1: Sarah represents a tech-savvy, creative remote worker facing emotional challenges like loneliness and burnout. Her struggles with work-life balance and the lack of deep social connections are very different from those of Persona 2: James, who is older and less familiar with technology, but both share a need for deeper emotional fulfillment.
 
+![image](https://github.com/user-attachments/assets/7c4fd68c-5502-4917-bee9-6fb36bced2fd)
 Persona 2: James - 68 represents an older, less tech-savvy individual who experiences loneliness and isolation but has different needs and challenges than a younger user like Persona 1 (Sarah).
 
 ### AEIOU Method
