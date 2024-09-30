@@ -12,7 +12,8 @@ Learning Goal:
 - Using a AI
 
 Reflection:
-- What went well? Teamwork great as always. 
+- What went well?
+  Teamwork great as always. 
   No one was sick or absent.
 
 - What are our challenges by far?
