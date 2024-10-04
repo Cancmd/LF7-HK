@@ -1,10 +1,10 @@
-import smbclient
-import cv2  # OpenCV library for image handling
-import numpy as np
-from deepface import DeepFace
+import smbclient                # Handles the network drive 
+import cv2                      # Library for working with imagefiles
+import numpy as np              # Library for image conversion (the Image is converted into an array and decoded before being referenced by DeepFace)
+from deepface import DeepFace   # Python Wrapper with a large variety of modules for machine learning facial recognition
 
-# Register the SMB client session
-smbclient.register_session(server="192.168.178.65", username="smbuser", password="ChangeMe2024!")
+# Register the SMB client session | This section needs to be updated!!!
+smbclient.register_session(server="-", username="-", password="-")
 
 # Function to read the image from SMB and analyze with DeepFace
 def analyze_image_from_smb(smb_path):
@@ -20,7 +20,7 @@ def analyze_image_from_smb(smb_path):
     image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
     
     # Use DeepFace to analyze the image
-    results = DeepFace.analyze(img_path=image, actions=['age', 'gender', 'emotion', 'race'])
+    results = DeepFace.analyze(img_path=image, actions=['emotion'])
     
     return results
 
