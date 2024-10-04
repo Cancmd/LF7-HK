@@ -2,6 +2,7 @@ import smbclient                # Handles the network drive
 import cv2                      # Library for working with imagefiles
 import numpy as np              # Library for image conversion (the Image is converted into an array and decoded before being referenced by DeepFace)
 from deepface import DeepFace   # Python Wrapper with a large variety of modules for machine learning facial recognition
+import mysql.connector          # Module for connecting the script to the Database
 
 # Register the SMB client session | This section needs to be updated!!!
 smbclient.register_session(server="-", username="-", password="-")
@@ -19,12 +20,12 @@ def analyze_image_from_smb(smb_path):
     # Decode the image array to an OpenCV image format
     image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
     
-    # Use DeepFace to analyze the image
-    results = DeepFace.analyze(img_path=image, actions=['emotion'])
+    # Call Deepface to analyze the image. The "actions" parameter narrows down the response body to the one atribute we want
+    results = DeepFace.analyze(img_path=image, actions=['dominant_emotion'])
     
     return results
 
-# Specify the SMB path to the .jpg file
+# Specify the SMB path to the .jpg file | This part needs to be reworked with either a directory scan and variable filenames or to run reguarly with the same filename (old ones would get overwriten)
 smb_image_path = r"\\192.168.178.65\imgpool\image1.jpg"
 
 # Analyze the image
