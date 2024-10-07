@@ -4,9 +4,13 @@ import numpy as np              # Library for image conversion (the Image is con
 from deepface import DeepFace   # Python Wrapper with a large variety of modules for machine learning facial recognition
 import mysql.connector          # Module for connecting the script to the Database
 import json                     # Module to interprete json arrays
+from datetime import datetime   # Module for the date
+from config import db_config    # imports the database connection function from config.py
+from config import smb_config   # import the smb credentials from config.py
 
-# Register the SMB client session | This section needs to be updated!!!
-smbclient.register_session(server="-", username="-", password="-")
+
+# Register the SMB client session
+smbclient.register_session(**smb_config)
 
 # Function to read the image from SMB and analyze with DeepFace
 def analyze_image_from_smb(smb_path):
@@ -34,6 +38,36 @@ def analyze_image_from_smb(smb_path):
 # Specify the SMB path to the .jpg file | This part needs to be reworked with either a directory scan and variable filenames or to run reguarly with the same filename (old ones would get overwriten)
 smb_image_path = r"\\192.168.178.65\imgpool\image1.jpg"
 
+# Function to connect to the database and to create an object
+def insert_into_database(analysis_result):
+    # Connect to the server specified in config.py. This is done so that the connection credentials arent uploaded in the main code
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+
+    # SQL querry to insert values that werent specified yet into the table "emotions" with the collumns "dominant_emotion" and "timestamp"
+    query = """
+    INSERT INTO emotions (dominant_emotion, timestamp)
+    VALUES (%s, %s)
+    """
+    
+    # This pulls the current time | H M S are still not working - this might be due to the collumn properties 
+    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    # Execute the querry specified previously with the payload
+    cursor.execute(query, (analysis_result, current_time))
+    
+    # Commit the transaction
+    conn.commit()
+
+    # Close the cursor and connection
+    cursor.close()
+    conn.close()
+
+    # Print the result
+    print(f"Inserted into database: {analysis_result} at {current_time}")
+
 # Analyze the image
 analysis_results = analyze_image_from_smb(smb_image_path)
-print(analysis_results)
+
+# Insert the analysis result and current time into the database
+insert_into_database(analysis_results)
