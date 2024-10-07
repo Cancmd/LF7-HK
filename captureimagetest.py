@@ -1,9 +1,7 @@
 import subprocess
 from time import sleep
 from datetime import datetime
-from smbprotocol.connection import Connection
-from smbprotocol.session import Session
-from smbprotocol.file import File
+from smb.SMBConnection import SMBConnection
 
 def capture_image():
     # Generate a unique filename based on the current date and time
@@ -33,21 +31,16 @@ def capture_image():
     username = 'smbuser'           # Your SMB username
     password = 'ChangeMe2024!'           # Your SMB password
     
-    # Connect to the SMB server
-    connection = Connection(uuid='my-connection', server=smb_server)
-    connection.connect()
+    # Establish a connection to the SMB server
+    conn = SMBConnection(username, password, "RaspberryPi", smb_server, use_ntlm_v2=True)
+    conn.connect(smb_server)
+
+    # Specify the path where you want to save the image
+    remote_path = f"{share_name}/{output_filename}"
     
-    session = Session(connection, username, password)
-    session.connect()
-    
-    # Specify the share and path where you want to save the image
-    remote_path = f'\\{share_name}\\{output_filename}'
-    
-    # Open the file on the SMB share
-    with File(session, remote_path, "w") as remote_file:
-        # Read the captured image file and write it to the remote file
-        with open(output_filename, "rb") as local_file:
-            remote_file.write(local_file.read())
+    # Write the captured image to the SMB share
+    with open(output_filename, "rb") as local_file:
+        conn.storeFile(share_name, output_filename, local_file)
     
     print(f"Image saved to SMB share at {remote_path}")
 
