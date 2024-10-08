@@ -50,7 +50,7 @@ def insert_into_database(analysis_result):
     VALUES (%s, %s)
     """
     
-    # This pulls the current time | H M S are still not working - this might be due to the collumn properties 
+    # This pulls the current time in the DATETIME format
     current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     # Execute the querry specified previously with the payload
