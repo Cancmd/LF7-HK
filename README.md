@@ -4,23 +4,25 @@
 
 Portfolio on GitLab/GitHub (50%):
 - an individual learning goal including reflection
-- 
+
 Learning Goal:
-- We want to learn how to work with a Raspberry Pi and an Camera Module and other Modules aswell also working with an AI.
-- Setting up a Raspberry Pi, adding different modules like a Camera or LED.
-- Setting up a Database for the AI
-- Using a AI
+- We want to try prototyping with a rasberry pi and its modules
+- Implementing a neural network for image analysis
+- Connecting multiple hosts with SMB and MySQL-Connectors
 
 Reflection:
 - What went well?
-  Teamwork great as always. 
-  No one was sick or absent.
+  Teamwork great as always
+  No one was sick or absent
 
-- What are our challenges by far?
-  Setting the AI up and using the Raspberry Pi with an Camera Module.
+- What was challenging?
+  Setting up the neural network in a python enviroment
+  Using a camera module on the rasberry pi
+  Resolving a network issue with the VPN
+
 
 - How did we overcome these challenges?
-  Asking others for help, searching in the Internet, asking AIs.
+  Asking others for help, searching in the internet, trial and error
 ```
 
 - DIY problem definition 5-W Questions
