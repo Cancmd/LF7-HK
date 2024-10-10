@@ -11,6 +11,7 @@ Proactive Support: Offers suggestions for social activities, relaxation techniqu
 
 ### Future Plans:
 Privacy & Security: Implement a robust data security measures to protect user information and ensure responsible AI use.
+Smart Home APIs: Integrates with devices like Philips Hue, smart speakers, and temperature control systems.
 
 ### The Problem
 Many individuals, particularly remote workers and seniors are increasingly facing loneliness, anxiety, and a lack of social interactions, which can lead to deteriorating mental health. Many of them lack effective tools to monitor and address their emotional well-being.
@@ -165,5 +166,3 @@ We sought assistance from others, conducted online research, and employed trial 
 Database + Raspberry Pi with a Camera
 
 AI and Facial Recognition: Detects and processes users' emotional states.
-
-Smart Home APIs: Integrates with devices like Philips Hue, smart speakers, and temperature control systems.
