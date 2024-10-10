@@ -2,13 +2,15 @@
 ![image](https://github.com/user-attachments/assets/bd04cebf-0038-4c50-8ca4-93916dc90a54)
 
 ## Overview
-This project addresses the mental health challenges faced by remote workers and seniors by providing a seamless, AI-powered solution integrated into smart homes. By analyzing the user's mood through facial recognition, the system automatically adjusts the home environment (lighting, music, social activity prompts) to provide emotional support in real-time.
+This project addresses the mental health challenges faced by everyone who experiences loneliness and anxiety by providing a seamless, AI-powered solution integrated into smart homes. By analyzing the user's mood through facial recognition, the system automatically adjusts the home environment (lighting, music, social activity prompts) to provide emotional support in real-time.
 
 ## Key Features:
 Facial Emotion Detection: Scans facial expressions to analyze mood in real-time.
 Smart Home Integration: Automatically adjusts lighting, music, and temperature based on the user’s emotional state.
 Proactive Support: Offers suggestions for social activities, relaxation techniques, and reminders to stay connected with loved ones.
-Privacy & Security: Implements robust data security measures to protect user information and ensure responsible AI use.
+
+Future Plans:
+Privacy & Security: Implement a robust data security measures to protect user information and ensure responsible AI use.
 
 ### The Problem
 Remote workers and seniors are increasingly facing loneliness, anxiety, and a lack of social interactions, which can lead to deteriorating mental health. Many of them lack effective tools to monitor and address their emotional well-being.
@@ -156,7 +158,7 @@ Troubleshooting a network issue related to the VPN.
 We sought assistance from others, conducted online research, and employed trial and error.
 
 ## Technologies Used
-Database + Raspberry Pi with an Camera
+Database + Raspberry Pi with a Camera
 
 AI and Facial Recognition: Detects and processes users' emotional states.
 
