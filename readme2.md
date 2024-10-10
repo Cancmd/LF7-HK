@@ -9,17 +9,21 @@ Facial Emotion Detection: Scans facial expressions to analyze mood in real-time.
 Smart Home Integration: Automatically adjusts lighting, music, and temperature based on the user’s emotional state.
 Proactive Support: Offers suggestions for social activities, relaxation techniques, and reminders to stay connected with loved ones.
 
-Future Plans:
+### Future Plans:
 Privacy & Security: Implement a robust data security measures to protect user information and ensure responsible AI use.
 
 ### The Problem
-Remote workers and seniors are increasingly facing loneliness, anxiety, and a lack of social interactions, which can lead to deteriorating mental health. Many of them lack effective tools to monitor and address their emotional well-being.
+Many individuals, particularly remote workers and seniors are increasingly facing loneliness, anxiety, and a lack of social interactions, which can lead to deteriorating mental health. Many of them lack effective tools to monitor and address their emotional well-being.
 
 ### Our Solution
-We’ve built an AI Mood Analyzer that integrates with smart home devices to provide personalized, real-time support:
+We’ve built  an advanced AI system that scans faces to analyze mood and automatically triggers supportive actions, such as:
+Adjusting lighting for a calming atmosphere
+Playing soothing music
+Suggesting social activities or connections
 
-For remote workers: Helps reduce feelings of isolation by creating a more supportive home environment.
-For seniors: Promotes social engagement by providing gentle reminders and mood-enhancing adjustments in the home.
+### Innovation
+Seamless Automation
+This innovative system operates automatically, responding in real-time to users' emotional states, ensuring proactive support for mental well-being without requiring manual input.
 
 # Empathize Phase
 ## Empathize Map
