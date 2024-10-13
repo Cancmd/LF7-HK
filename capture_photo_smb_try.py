@@ -4,6 +4,8 @@ from datetime import datetime
 from smbprotocol.connection import Connection
 from smbprotocol.session import Session
 from smbprotocol.file import File
+from config import db_config    # imports the database connection function from config.py
+from config import smb_config   # import the smb credentials from config.py
 
 def capture_image():
     # Generate a unique filename based on the current date and time
