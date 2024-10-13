@@ -1,73 +1,110 @@
-import smbclient                # Handles the network drive 
-import cv2                      # Library for working with imagefiles
-import numpy as np              # Library for image conversion (the Image is converted into an array and decoded before being referenced by DeepFace)
-from deepface import DeepFace   # Python Wrapper with a large variety of modules for machine learning facial recognition
+import cv2                      # Library for working with image files
+import numpy as np              # Library for image conversion
+from deepface import DeepFace   # Python wrapper for machine learning facial recognition
 import mysql.connector          # Module for connecting the script to the Database
-import json                     # Module to interprete json arrays
+import json                     # Module to interpret JSON arrays
 from datetime import datetime   # Module for the date
-from config import db_config    # imports the database connection function from config.py
-from config import smb_config   # import the smb credentials from config.py
+from config import db_config    # Imports the database connection function from config.py
+
+# Function to fetch rows with images where 'dominant_emotion' is NULL
+def fetch_images_with_null_emotion():
+    try:
+        # Connect to the MySQL database using credentials from config.py
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+
+        # SQL query to fetch rows where dominant_emotion is NULL
+        query = """
+        SELECT id, img FROM emotions WHERE dominant_emotion IS NULL
+        """
+        
+        # Execute the query
+        cursor.execute(query)
+        results = cursor.fetchall()
+
+        return results  # Returns a list of tuples (id, image_blob)
+
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        return None
+
+    finally:
+        # Close the cursor and connection
+        if conn.is_connected():
+            cursor.close()
+            conn.close()
 
 
-# Register the SMB client session
-smbclient.register_session(**smb_config)
-
-# Function to read the image from SMB and analyze with DeepFace
-def analyze_image_from_smb(smb_path):
-    # Open the image from SMB as a binary stream
-    with smbclient.open_file(smb_path, mode='rb') as file:
-        # Read the image data
-        image_data = file.read()
-    
-    # Convert binary data to a numpy array
-    image_array = np.asarray(bytearray(image_data), dtype=np.uint8)
+# Function to analyze the image using DeepFace
+def analyze_image_from_blob(image_blob):
+    # Convert the BLOB (binary data) to a numpy array
+    image_array = np.asarray(bytearray(image_blob), dtype=np.uint8)
     
     # Decode the image array to an OpenCV image format
     image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
     
-    # Call Deepface to analyze the image. The "actions" parameter narrows down the response body to the one atribute we want
-    results = DeepFace.analyze(img_path=image, actions=['emotion'])
+    # Call DeepFace to analyze the image and detect emotion
+    results = DeepFace.analyze(img_path=image, actions=['emotion'], enforce_detection=False)
     
-    # Since we cant cant specify which of the emotion values we want we need to first turn the list into a json array
+    # Convert the DeepFace results into a JSON format
     jarray = json.dumps(results)
-    # The json array then needs to be parsed
-    jarrayparsed = json.loads(jarray)
-    # In the return value of the function we can specify which value we need
-    return jarrayparsed[0]["dominant_emotion"]
-
-# Specify the SMB path to the .jpg file | This part needs to be reworked with either a directory scan and variable filenames or to run reguarly with the same filename (old ones would get overwriten)
-smb_image_path = r"\\192.168.178.65\imgpool\image1.jpg"
-
-# Function to connect to the database and to create an object
-def insert_into_database(analysis_result):
-    # Connect to the server specified in config.py. This is done so that the connection credentials arent uploaded in the main code
-    conn = mysql.connector.connect(**db_config)
-    cursor = conn.cursor()
-
-    # SQL querry to insert values that werent specified yet into the table "emotions" with the collumns "dominant_emotion" and "timestamp"
-    query = """
-    INSERT INTO emotions (dominant_emotion, timestamp)
-    VALUES (%s, %s)
-    """
     
-    # This pulls the current time in the DATETIME format
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    # Parse the JSON array to extract the dominant emotion
+    jarray_parsed = json.loads(jarray)
+    return jarray_parsed[0]["dominant_emotion"]
 
-    # Execute the querry specified previously with the payload
-    cursor.execute(query, (analysis_result, current_time))
-    
-    # Commit the transaction
-    conn.commit()
+# Function to update the database with the dominant emotion and timestamp
+def update_emotion_in_db(image_id, dominant_emotion):
+    try:
+        # Connect to the MySQL database using credentials from config.py
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
 
-    # Close the cursor and connection
-    cursor.close()
-    conn.close()
+        # SQL query to update the dominant emotion and timestamp for a specific image ID
+        query = """
+        UPDATE emotions
+        SET dominant_emotion = %s, timestamp = %s
+        WHERE id = %s
+        """
+        
+        # Fetch the current time in the DATETIME format
+        current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    # Print the result
-    print(f"Inserted into database: {analysis_result} at {current_time}")
+        # Execute the query with the analysis result and timestamp
+        cursor.execute(query, (dominant_emotion, current_time, image_id))
+        
+        # Commit the transaction
+        conn.commit()
 
-# Analyze the image
-analysis_results = analyze_image_from_smb(smb_image_path)
+        # Print the result
+        print(f"Updated image ID {image_id}: dominant_emotion = {dominant_emotion} at {current_time}")
 
-# Insert the analysis result and current time into the database
-insert_into_database(analysis_results)
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+    finally:
+        # Close the cursor and connection
+        if conn.is_connected():
+            cursor.close()
+            conn.close()
+
+# Main function to process images
+def process_images():
+    # Fetch the images where dominant_emotion is NULL
+    images = fetch_images_with_null_emotion()
+
+    if images:
+        # Loop through each row
+        for image_id, image_blob in images:
+            print(f"Processing image ID {image_id}...")
+
+            # Analyze the image to detect the dominant emotion
+            dominant_emotion = analyze_image_from_blob(image_blob)
+
+            # Update the database with the detected emotion
+            update_emotion_in_db(image_id, dominant_emotion)
+    else:
+        print("No images with NULL dominant_emotion found.")
+
+# Run the process
+if __name__ == "__main__":
+    process_images()
