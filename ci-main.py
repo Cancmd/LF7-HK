@@ -2,8 +2,9 @@ import subprocess
 from config import db_config   # import the db credentials from config.py
 from time import sleep
 import mysql.connector
+import os
 
-output_path = f"/home/PI01/Desktop/Photo/image.jpg"
+output_path = f"/home/PI01/Pictures/image.jpg"
 def capture_image():
     
     # Command to capture the image with libcamera-still
@@ -24,9 +25,14 @@ def capture_image():
     print(f"Image captured and saved to {output_path}")
 
 def binaryconversion(filename):
-    with open(filename, 'rb') as file:
-        binaryfile = file.read()
-    return binaryfile
+    if os.path.exists(filename):
+        with open(filename, 'rb') as file:
+            binaryfile = file.read()
+        return binaryfile
+    else:
+        print(f"Error:File does not exist")
+        return None
+    
 
 
 # Function to connect to the database and to create an object
@@ -43,7 +49,7 @@ def insert_into_database(capturejpg):
     binaryimgfile = binaryconversion(capturejpg)
 
     # Execute the querry specified previously with the payload
-    cursor.execute(query, (binaryimgfile))
+    cursor.execute(query, (binaryimgfile,))
     
     # Commit the transaction
     conn.commit()
@@ -58,4 +64,4 @@ def insert_into_database(capturejpg):
 # Call the capture function
 capture_image()
 sleep(1)
-insert_into_database("/home/PI01/Desktop/Photo/image.jpg")
+insert_into_database("/home/PI01/Pictures/image.jpg")
