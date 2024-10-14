@@ -33,6 +33,7 @@ This innovative system operates automatically, responding in real-time to users'
 https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727252053154/e5431b7a1ab53364c23d3eaf34e0258a65bcd4bc?sender=u842cd77d0907f9e08ed76567
 
 https://app.mural.co/t/lf7hackathon6094/m/lf7hackathon6094/1727422093738/3ff87da4cc408c04c5d1e935d3fbcd9ffe245dd4?sender=u842cd77d0907f9e08ed76567
+
 To better understand our users, we created two personas:
 Sarah (Remote Worker): A young professional who feels anxious and isolated due to working alone from home.
 ![image](https://github.com/user-attachments/assets/d260117e-454d-47e7-aff9-3aab73314498)
